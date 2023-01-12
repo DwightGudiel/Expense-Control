@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10em;
+  font-size: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /* para usar mejor box model */
+}
+
+/* para usar mejor box model */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.footer {
+  padding: 3rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.shadow {
+  border: solid 1px #202020;
+}
+
+.container-expenses{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1320px) {
+  .container-expenses{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 5rem;
+  }
+}
